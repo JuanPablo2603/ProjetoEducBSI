@@ -1,0 +1,57 @@
+/*
+inicio
+VAR
+cheque,desconto,valorfinal;
+
+LER
+s_cheque;
+
+escreva "DIGITE O VALOR DO CHEQUE''
+Desconto = 0.38/100;
+valorfinal=(cheque*desconto)
+
+se (cheque>=0)
+escreva = "o valor descontado foi " + valor final;
+senao
+escreva= "invalido";
+
+FIM
+
+TESTE DE MESA
+
+CHEQUE // VALORFINAL // ESCREVA
+1000      3.8           3.8
+1500      5.7           5.7
+-1000      -             - 
+  0        -              -
+*/
+
+
+package ex28;
+import javax.swing.JOptionPane;  
+public class ex28 {
+
+    
+    public static void main(String[] args) {
+        //var
+        double cheque,desconto,valorfinal;
+       String s_cheque;
+       
+       s_cheque = JOptionPane.showInputDialog("Digite o valor do cheque ");
+       cheque = Double.parseDouble(s_cheque);
+       
+       desconto = 0.38/100;
+       valorfinal = (cheque*desconto);
+       
+       if(cheque>0)
+       {
+           JOptionPane.showMessageDialog(null, " INVÁLIDO ");
+           
+       }
+       else
+       {
+           JOptionPane.showMessageDialog(null, "o valor recolhido foi R$ " +valorfinal);
+       }
+    }
+    }
+    
