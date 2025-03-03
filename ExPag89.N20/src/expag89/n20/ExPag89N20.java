@@ -1,5 +1,25 @@
 /*
+var
+int : saldo
+   string s_saldo, cliente;
 
+inicio
+
+    // Solicita os valores de A e B
+    escreva("Digite o valor de A: ")
+    leia(a)
+    escreva("Digite o valor de B: ")
+    leia(b)
+
+    // Calcula o valor de X
+    valorX <- -b / a
+
+    // Verifica se A é maior que zero
+    se a > 0 entao
+        escreva("A reta toca o eixo X no ponto: (", valorX, ", 0)")
+    senao
+        escreva("INVÁLIDO")
+    fim
 
 
  
