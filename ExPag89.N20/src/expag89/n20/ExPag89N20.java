@@ -21,6 +21,14 @@ inicio
         escreva("INVÁLIDO")
     fim
 
+    teste de mesa
+    
+ Passo	Operação	/ Entrada/Cálculo	/ Resultado
+ 1	      Ler saldo /	 1500	         / -
+ 2 Ler nome do cliente/ "Carlos"	/-
+ 3	Verificar saldo/	1500está entre 1000e2000/	-
+ 4	Calcular saldo final	1500 × 0.3 = 450	"O saldo do Carlos É 450.0"
+
 
  
  */
