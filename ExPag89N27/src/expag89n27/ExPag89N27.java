@@ -89,6 +89,23 @@ inicio
 
    FIM
 
+   Iteração	Valores/Resultados
+1	Ler alt1	alt1 = 1.70
+2	Ler alt2	alt2 = 1.80
+3	Ler alt3	alt3 = 1.65
+4	Ler idad1	idad1 = 20
+5	Ler idad2	idad2 = 25
+6	Ler idad3	idad3 = 18
+7	Ler nome1	nome1 = "João"
+8	Ler nome2	nome2 = "Maria"
+9	Ler nome3	nome3 = "Pedro"
+10	Calcular média das alturas	media = (1.70 + 1.80 + 1.65) / 3 = 1.7167
+11	Verificar a maior altura	alt2 (1.80) > alt1 (1.70) e alt2 (1.80) > alt3 (1.65) → Maria é a mais alta
+12	Verificar a menor altura	alt3 (1.65) < alt1 (1.70) e alt3 (1.65) < alt2 (1.80) → Pedro é o mais baixo
+13	Verificar a maior idade	idad2 (25) > idad1 (20) e idad2 (25) > idad3 (18) → Maria é a mais velha
+14	Verificar a menor idade	idad3 (18) < idad1 (20) e idad3 (18) < idad2 (25) → Pedro é o mais novo
+15	Exibir a média das alturas	A altura média é: 1.7167
+
 
  */
 package expag89n27;
