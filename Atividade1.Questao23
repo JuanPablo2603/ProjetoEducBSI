@@ -1,0 +1,66 @@
+/* Declaração de variáveis
+declare suaAltura, suaSombra, sombraPredio, alturaPredio: real
+
+// Entrada de dados
+escreva("Digite a sua altura em metros: ")
+leia(suaAltura)
+
+escreva("Digite o comprimento da sua sombra em metros: ")
+leia(suaSombra)
+
+escreva("Digite o comprimento da sombra do prédio em metros: ")
+leia(sombraPredio)
+
+// Cálculo da altura do prédio usando proporção
+alturaPredio <- (suaAltura * sombraPredio) / suaSombra
+
+// Exibe o resultado
+escreva("A altura do prédio é aproximadamente: ", alturaPredio:2, " metros")
+
+Teste de Mesa 
+
+/*Declaração de variáveis
+declare suaAltura, suaSombra, sombraPredio, alturaPredio: real
+
+// Entrada de dados
+escreva("Digite a sua altura em metros: ")
+leia(suaAltura)
+
+escreva("Digite o comprimento da sua sombra em metros: ")
+leia(suaSombra)
+
+escreva("Digite o comprimento da sombra do prédio em metros: ")
+leia(sombraPredio)
+
+// Cálculo da altura do prédio usando proporção
+alturaPredio <- (suaAltura * sombraPredio) / suaSombra
+
+// Exibe o resultado
+escreva("A altura do prédio é aproximadamente: ", alturaPredio:2, " metros")
+
+teste de mesa
+
+ ALTURA // SOMBRA // SOMBRAPREDIO // ALTURAPREDIO // ESCREVA 
+1.80         5         5                5            1.80
+1.74         8         10              10            1.78
+
+*/
+
+
+
+import javax.swing.JOptionPane;
+
+public class Ex23 {
+    public static void main(String[] args) {
+        // Leitura dos dados necessários
+        double suaAltura = Double.parseDouble(JOptionPane.showInputDialog("Digite a sua altura em metros:"));
+        double suaSombra = Double.parseDouble(JOptionPane.showInputDialog("Digite o comprimento da sua sombra em metros:"));
+        double sombraPredio = Double.parseDouble(JOptionPane.showInputDialog("Digite o comprimento da sombra do prédio em metros:"));
+
+        // Cálculo da altura do prédio usando proporção
+        double alturaPredio = (suaAltura * sombraPredio) / suaSombra;
+
+        // Exibição da altura do prédio
+        JOptionPane.showMessageDialog(null, "A altura do prédio é aproximadamente: " + String.format("%.2f", alturaPredio) + " metros");
+    }
+}
