@@ -1,0 +1,58 @@
+
+var
+    primeiro, segundo, terceiro: real
+    totalprimeiro, totalsegundo, totalterceiro: real
+    proporcao, divisao: real
+
+inicio
+    escreva("DIGA A QUANTIDADE DE PONTOS: ")
+    leia(primeiro)
+    
+    escreva("DIGA A QUANTIDADE DE PONTOS: ")
+    leia(segundo)
+    
+    escreva("DIGA A QUANTIDADE DE PONTOS: ")
+    leia(terceiro)
+    
+    proporcao <- primeiro + segundo + terceiro
+    divisao <- (50 * 10000) / proporcao
+    totalprimeiro <- divisao * primeiro
+    totalsegundo <- divisao * segundo
+    totalterceiro <- divisao * terceiro
+    
+    escreva("A divisão do primeiro é: ", totalprimeiro, "\n")
+    escreva("A divisão do segundo é: ", totalsegundo, "\n")
+    escreva("A divisão do terceiro é: ", totalterceiro, "\n")
+    
+fim
+
+package ex26;
+import javax.swing.JOptionPane;
+public class Ex26 {
+
+    
+    public static void main(String[] args) {
+       float primeiro,segundo,terceiro,totalprimeiro,totalsegundo,totalterceiro,proporção,divisao;
+        String sprimeiro,ssegundo,sterceiro;
+        
+        sprimeiro =  JOptionPane.showInputDialog(null," DIGA A QUANTIDADE DE PONTOS ");
+        primeiro = Float.parseFloat(sprimeiro);
+        
+        ssegundo = JOptionPane.showInputDialog(null," DIGA A QUANTIDADE DE PONTOS ");
+        segundo = Float.parseFloat(ssegundo);
+        
+        sterceiro = JOptionPane.showInputDialog(null," DIGA A QUANTIDADE DE PONTOS ");
+        terceiro =Float.parseFloat(sterceiro);
+        
+        proporção = primeiro + segundo + terceiro;
+        divisao = (50*10000)/proporção;
+        totalprimeiro = divisao*primeiro;
+        totalsegundo = divisao*segundo;
+        totalterceiro = divisao*terceiro;
+        
+        JOptionPane.showMessageDialog(null," A divisão do primeiro é " + totalprimeiro + " a divisão do segundo é " + totalsegundo + " a divisao do terceiro é " + totalterceiro  );
+       
+        
+    }
+    
+}
