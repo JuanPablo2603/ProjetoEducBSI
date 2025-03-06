@@ -1,3 +1,32 @@
+var
+    compra1, compra2, compra3, compra4: real
+    totalGasto, pontos: real
+
+inicio
+    escreva("Digite o valor da 1ª compra: ")
+    leia(compra1)
+
+    escreva("Digite o valor da 2ª compra: ")
+    leia(compra2)
+
+    escreva("Digite o valor da 3ª compra: ")
+    leia(compra3)
+
+    escreva("Digite o valor da 4ª compra: ")
+    leia(compra4)
+
+    totalGasto <- compra1 + compra2 + compra3 + compra4
+    pontos <- totalGasto / 5.0
+
+    escreva("Pontos acumulados: ", pontos, "\n")
+fim
+
+teste de mesa 
+Iteração compra1 compra2 compra3 compra4 totalGasto	pontos
+1ª	      10	    -	   -	      - 	  - 	    -        
+2ª	      10	   20	   - 	      -       -         -
+3ª	      10	   20	  30	      -       -         -
+4ª	      10	   20	  30	      40	  100	     20.0
 
 
 import javax.swing.JOptionPane;
