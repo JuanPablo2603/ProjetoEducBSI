@@ -1,6 +1,49 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+var
+    temp: inteiro
+    funcionario, categoria: caractere
+
+inicio
+    escreva("ESCOLHA A SUA CATEGORIA: \nG - Projeto Grande \nM - Projeto Médio \nP - Projeto Pequeno\n")
+    leia(categoria)
+    
+    escreva("Diga o nome do funcionário: ")
+    leia(funcionario)
+
+    escreva("Diga o tempo de empresa: ")
+    leia(temp)
+
+    temp <- temp * 2
+
+    se categoria = "G" entao
+        se temp > 0 entao
+            escreva("A sua pontuação FOI DE ", (temp + 10), "\n")
+        senao
+            escreva("Inválido\n")
+        fimse
+    senao se categoria = "M" entao
+        se temp > 0 entao
+            escreva("A sua pontuação FOI DE ", (temp + 5), "\n")
+        senao
+            escreva("Inválido\n")
+        fimse
+    senao se categoria = "P" entao
+        se temp > 0 entao
+            escreva("A sua pontuação FOI DE ", (temp + 2), "\n")
+        senao
+            escreva("Inválido\n")
+        fimse
+    fimse
+fim
+teste de mesa 
+
+Etapa	Entrada	Cálculo	Resultado
+Categoria   M	    -	    -
+Funcionario carlos	-	    -
+Tempo	4	4 ×	8
+Pontuação	M	8 + 5	13
+
+ 
  */
 package ex30;
 
