@@ -26,6 +26,15 @@ inicio
     
 fim
 
+Teste de mesa
+Variável	Cálculo	// Resultado
+proporção 10+20 +30	= 60
+Substituir (50 × 10000) / 60 //	8333,33
+totalprimeiro	8333,33 × 10 //	83333,33
+totalsegundo	8333,33 × 20 //	166666,67
+totalterceiro	8333,33 × 30 // 	250000,00
+
+
 package ex26;
 import javax.swing.JOptionPane;
 public class Ex26 {
