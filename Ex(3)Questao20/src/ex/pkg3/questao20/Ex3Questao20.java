@@ -85,7 +85,7 @@ public class Ex3Questao20 {
                     "Escolha seu voto \n" + "1 - Eugenia\n " +
                     "2 - Firmino\n" +
                      "0 - Branco\n" +
-                     "9 - nuko\n"));
+                     "9 - nulo\n"));
             if(voto == -1){
                 break;
             }
