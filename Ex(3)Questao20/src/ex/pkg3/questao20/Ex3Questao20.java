@@ -109,7 +109,7 @@ public class Ex3Questao20 {
             vencedor = " Firmino ";
         }
         else {
-            JOptionPane.showMessageDialog(null, "Empate ");
+            JOptionPane.showMessageDialog(null, "Não pode haver empates, vote novamente ");
         } JOptionPane.showMessageDialog(null,
             "Resultados da Votação:\n" +
             "Eugenia: " + votosEugenia + " votos\n" +
