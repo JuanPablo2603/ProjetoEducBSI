@@ -42,8 +42,12 @@ inicio
         vencedor <- "Eugenia"
     senão se votosFirmino > votosEugenia então
         vencedor <- "Firmino"
-    senão
-        escreva("Empate!")
+    senão se votosFirmino = votosEugenia então
+        escreva("Desempate! escolha o seu voto ")
+        se (voto = 1)
+        vencedor <- Eugenia
+        senao (voto = 2)
+        vencedor <- Firmino
     fimse
     
     escreva("Resultados da Votação:")
@@ -80,6 +84,7 @@ public class Ex3Questao20 {
     public static void main(String[] args) {
         // TODO code application logic here
         int votosFirmino = 0, votosEugenia = 0, votosNulos =0, votosBrancos =0, totalEleitores = 0;
+         String vencedor = "";
         while(true){
             int voto = Integer.parseInt(JOptionPane.showInputDialog("Eleitor " + (totalEleitores +1) +
                     "Escolha seu voto \n" + "1 - Eugenia\n " +
@@ -101,15 +106,23 @@ public class Ex3Questao20 {
                 }
         }
         }
-        String vencedor = null;
+       
         if(votosEugenia>votosFirmino){
            vencedor = "Eugenia ";
         }
         else if(votosFirmino>votosEugenia){
             vencedor = " Firmino ";
         }
-        else {
-            JOptionPane.showMessageDialog(null, "Não pode haver empates, vote novamente ");
+        else if(votosEugenia == votosFirmino) {
+             int voto = Integer.parseInt(JOptionPane.showInputDialog("Voto de desempate: " +
+                    " Escolha seu voto \n " + "1 - Eugenia\n " +
+                    "2 - Firmino"));
+             if(voto == 1){
+                 vencedor = "Eugenia" ;
+             }
+             else if(voto == 2){
+                 vencedor = "Firmino";
+             }
         } JOptionPane.showMessageDialog(null,
             "Resultados da Votação:\n" +
             "Eugenia: " + votosEugenia + " votos\n" +
