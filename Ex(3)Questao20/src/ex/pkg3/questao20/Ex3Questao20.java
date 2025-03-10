@@ -83,7 +83,7 @@ public class Ex3Questao20 {
    
     public static void main(String[] args) {
         // TODO code application logic here
-        int votosFirmino = 0, votosEugenia = 0, votosNulos =0, votosBrancos =0, totalEleitores = 0;
+        nt votosFirmino = 0, votosEugenia = 0, votosNulos =0, votosBrancos =0, totalEleitores = 0;
          String vencedor = "";
         while(true){
             int voto = Integer.parseInt(JOptionPane.showInputDialog("Eleitor " + (totalEleitores +1) +
@@ -119,10 +119,14 @@ public class Ex3Questao20 {
                     "2 - Firmino"));
              if(voto == 1){
                  vencedor = "Eugenia" ;
+                 votosEugenia++;
              }
              else if(voto == 2){
                  vencedor = "Firmino";
+                 votosFirmino++;
              }
+             else JOptionPane.showMessageDialog(null, "Inválido");
+             totalEleitores++;
         } JOptionPane.showMessageDialog(null,
             "Resultados da Votação:\n" +
             "Eugenia: " + votosEugenia + " votos\n" +
